@@ -4,16 +4,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "styles.css"/>
     <title>Projectile Motion Simulation</title>
-    <link rel = "stylesheet" type = "text/css" href = "styles.css"/> 
-    <script type = "text/javascript" src = "projectile.js"></script>
 </head>
 <body>
-    <div class = "head">
-        <h1>Projectile Motion Simulation</h1>
-    </div>
-    <div class = "line"></div>
+
+    <header>
+        <h1>Projectile Motion Simulator</h1><hr>
+    </header>
     
+    <section>
+        <h2>Horizontal Direction</h2>
+
+        <main class = "horizontal">
+
+            <div class = "ha">
+                <input type="text" id="acc" value ="Acceleration (m/s^2)" readonly>
+                <input type="text" id="accel" > 
+            </div>
+
+            <div class = "hv">
+                <input type="text" id="vi" value = "Initial Velocity(m/s)" readonly>
+                <input type = "text" id = "viv">
+            </div>
+
+            <div class = "hv">
+                <input type="text" id="vf" value = "Final Velocity(m/s)" readonly>
+                <input type="text" id="vfv">
+            </div>
+
+            <div class = "px">
+                <input type = "text" id = "xi" value = "Initial Position(m)" readonly>       <!--The class of  "horizontal" in the main tag, inside that class, all the elements represent the inputs for the horizontal direction-->
+                <input type="text" id="xiv">
+            </div>
+
+            <div class = "px">
+                <input type="text" id="xf" value = "Final Position(m)" readonly>
+                <input type="text" id="xfv">
+            </div>
+
+            <div class = "t">
+                <input type="text" id="t1" value = "Intial Time(s)" readonly>
+                <input type="text" id="t1v">
+            </div>
+
+            <div class = "t">
+                <input type="text" id="t2" value = "Final Time(s)" readonly>
+                <input type = "text" id = "t2v">
+            </div>
+            <hr id = "divide">
+
+        </main>
+
+        <main class = "dividers">
+
+            <div class = "vl">
+                <!--This is the div container to store the vertical divider that divides the animation from the input values of vertical and horizontal direction-->
+            </div>
+
+            <div class ="hl">
+                <!--This is the container to store the horizontal divider-->
+            </div>
+
+        </main>
+        
+        <main class="vertical">
+
+                <div class = "ha">
+                    <input type="text" id="acc" value ="Acceleration (m/s^2)" readonly>
+                    <input type="text" id="accel" > 
+                </div>
+    
+                <div class = "hv">
+                    <input type="text" id="vi" value = "Initial Velocity(m/s)" readonly>
+                    <input type = "text" id = "viv">
+                </div>
+    
+                <div class = "hv">
+                    <input type="text" id="vf" value = "Final Velocity(m/s)" readonly>
+                    <input type="text" id="vfv">
+                </div>
+    
+                <div class = "px">
+                    <input type = "text" id = "yi" value = "Initial Position(m)" readonly>       <!--The class of  "vertical" in the main tag, inside that class, all the elements represent the inputs for the horizontal direction-->
+                    <input type="text" id="yiv">
+                </div>
+    
+                <div class = "px">
+                    <input type="text" id="yf" value = "Final Position(m)" readonly>
+                    <input type="text" id="yfv">
+                </div>
+    
+                <div class = "t">
+                    <input type="text" id="t1" value = "Intial Time(s)" readonly>
+                    <input type="text" id="t1v">
+                </div>
+    
+                <div class = "t">
+                    <input type="text" id="t2" value = "Final Time(s)" readonly>
+                    <input type = "text" id = "t2v">
+                </div>
+                
+        </main>
+
+    </section>
 
 </body>
 </html>
